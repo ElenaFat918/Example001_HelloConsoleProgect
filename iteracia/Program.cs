@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Программа проверки ");
+﻿Console.WriteLine("Программа проверки является ли первое число квадратом второго");
 
 Console.WriteLine("Введите первое число");
 
@@ -14,7 +14,7 @@ int numberB = int.Parse(numberStringA);
 
 int sgrt = numberA * numberA;
 
-if(numberA == sgrt)
+if(numberB == sgrt)
 {
     Console.WriteLine("Да");
 }
