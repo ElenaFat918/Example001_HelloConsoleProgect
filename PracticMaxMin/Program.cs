@@ -10,15 +10,15 @@ Console.WriteLine("Программа вывода максимума и мин�
 
 Console.WriteLine("Введите первое число");
 
-string numberString = Console.ReadLine();
+string numberStringA = Console.ReadLine();
 
-int numberA = int.Parse(numberString);
+int numberA = int.Parse(numberStringA);
 
 Console.WriteLine("Введите второе число");
 
-string numberStringA = Console.ReadLine();
+string numberStringB = Console.ReadLine();
 
-int numberB = int.Parse(numberStringA);
+int numberB = int.Parse(numberStringB);
 
 if(numberA > numberB)
 
