@@ -43,3 +43,7 @@ else if(number > 99999 && number < 1000000)
     int secondFigure = (number -  firstFigure)/1000; // убираем сотню и десяток
     Console.WriteLine(secondFigure);
 }
+else
+{
+    Console.WriteLine("Введенное число не предусмотрено программой, пожалуйста обратитесь к разработчику");
+}
