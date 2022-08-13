@@ -10,7 +10,7 @@ Console.WriteLine("Введите пятизначное число:");
 var String = Console.ReadLine();
 int Number = int.Parse(String);
 
-if (Number < 10000 && Number > 99999)
+if (Number < 10000 && Number > 99999)//защита от дурака
 {
     Console.WriteLine("Ошибка, введенное число непятизначное");
     return;
