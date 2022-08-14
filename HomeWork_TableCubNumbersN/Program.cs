@@ -7,7 +7,7 @@
 
 Console.Clear();
 
-Console.WriteLine("Таблица квадратов чисел от 1 до N");
+Console.WriteLine("Таблица кубов чисел от 1 до N");
 Console.WriteLine("Введите N:");
 
 int N = int.Parse(Console.ReadLine()!);
