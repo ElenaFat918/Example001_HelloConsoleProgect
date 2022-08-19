@@ -13,7 +13,34 @@ int[] CreateArray()
 }
 
 var array = CreateArray();
+// Console.Write("[");
+// for (int i = 0; i < 7; i++)
+//     Console.Write(array[i] + ",");
+// Console.Write(array[8] + "]");
+
+
+
 Console.Write("[");
-for (int i = 0; i < 7; i++)
-    Console.Write(array[i] + ",");
-Console.Write(array[8] + "]");
+int i = 0;
+while (i < 7)
+{
+    Console.Write(" " + array[i]);
+    i++;
+
+    if (i <= 6)
+    {
+        Console.Write(",");
+    }
+}
+Console.Write(" ]");
+
+
+
+// Console.Write("[");
+// for (int i = 0; i <= 8; i++)
+// {
+//     Console.Write(array[i]);
+//     if (i != 8)
+//         Console.Write(",");
+// }
+// Console.Write("]");
