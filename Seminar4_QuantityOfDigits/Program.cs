@@ -8,15 +8,21 @@ int Digits(int num)
     if (num == 0)
         return 1;
 
-    var result = 0;
+    // var result = 0;
     
-    while(num > 0)
-    {
-        num = num / 10;
-        result++;
-    }
-    
-    return result;
+    // while(num > 0)
+    // {
+    //     num = num / 10;
+    //     result++;
+    // }
+    for(var i = 1; ; i++)
+        {
+            num = num / 10;
+            if(num == 0)
+                return 1;
+        }
+    return -1;
+    //return result;
 }
 
 
