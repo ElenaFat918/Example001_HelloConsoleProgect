@@ -13,6 +13,7 @@ int[] CreateArray()
 }
 
 var array = CreateArray();
-
-for (int i = 0; i < 8; i++)
-    Console.WriteLine(array[i]);
+Console.Write("[");
+for (int i = 0; i < 7; i++)
+    Console.Write(array[i] + ",");
+Console.Write(array[8] + "]");
