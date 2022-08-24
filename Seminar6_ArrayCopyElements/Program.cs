@@ -1,5 +1,5 @@
 ﻿// Задача 45: Напишите программу, которая будет создавать копию заданного массива 
-// с помощью поэлементного копирования.
+// с помощью поэлементного копирования..
 
 int [] ArrayCopy (int [] arr)
 {
@@ -10,7 +10,8 @@ int [] ArrayCopy (int [] arr)
     }
     return result;
 }
-void PrintArray(int[] input) {
+void PrintArray(int[] input)
+{
     for(var i = 0; i < input.Length; i++)
         Console.Write(input[i] + ", ");
 }
