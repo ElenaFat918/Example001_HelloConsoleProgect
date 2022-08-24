@@ -6,7 +6,7 @@
 // [-4, -6, 89, 6] -> 0
 
 
-int[] createArray()
+int[] CreateArray()
 {
     var random = new Random();
     var result = new int[4];
@@ -16,7 +16,7 @@ int[] createArray()
     }
     return result;
 }
-void printArray(int[] array)
+void PrintArray(int[] array)
 {
     Console.Write("[");
 
@@ -49,10 +49,10 @@ int SumElenementsNegativIndex(int[] array)
 Console.Clear();
 Console.WriteLine();
 
-var arr = createArray();
+var arr = CreateArray();
 
 Console.WriteLine("Сгенерировали массив:");
-printArray(arr);
+PrintArray(arr);
 
 SumElenementsNegativIndex(arr);
 Console.WriteLine();
