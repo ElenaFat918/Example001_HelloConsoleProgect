@@ -3,17 +3,17 @@
 
 //[345, 897, 568, 234] -> 2
 
-int[] createArray()
+int[] CreateArray()
 {
     var random = new Random();
-    var result = new int[0];
+    var result = new int[10];
     for (var i = 0; i < result.Length; i++)
     {
         result[i] = random.Next(100, 1000);
     }
     return result;
 }
-void printArray(int[] array)
+void PrintArray(int[] array)
 {
     Console.Write("[");
 
@@ -46,10 +46,10 @@ int QuantityEvenElenement(int[] array)
 Console.Clear();
 Console.WriteLine();
 
-var arr = createArray();
+var arr = CreateArray();
 
 Console.WriteLine("Сгенерировали массив:");
-printArray(arr);
+PrintArray(arr);
 
 QuantityEvenElenement(arr);
 Console.WriteLine();
