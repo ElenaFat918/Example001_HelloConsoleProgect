@@ -22,8 +22,6 @@ Console.WriteLine("Введите значение k2: ");
 string? Nk2 = Console.ReadLine();
 double numberK2 = double.Parse(Nk2);
 
-
-
 void Coordinats(double numberB1, double numberB2, double numberK1, double numberK2)
 {
 double abscissa = (numberB2 - numberB1) / (numberK1 - numberK2);
