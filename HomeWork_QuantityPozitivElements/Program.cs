@@ -8,7 +8,7 @@ Console.WriteLine("Программа, принимающая введенные
 
 void InputArray(int[] array)
 {
-    int Lenght = array.Length;
+    int length = array.Length;
 
     for (int i = 0; i < array.Length; i++)
     {
@@ -53,10 +53,10 @@ int QuantityPozitivElements(int[] array)
 
 
 Console.WriteLine("Введите количество чисел: ");
-string? length = Console.ReadLine();
-int Length = int.Parse(length);
+string? Length = Console.ReadLine();
+int length = int.Parse(Length);
 
-int[] array = new int[Length];
+int[] array = new int[length];
 InputArray(array);
 Console.WriteLine();
 PrintArray(array);
