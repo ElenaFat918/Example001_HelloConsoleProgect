@@ -8,6 +8,12 @@
 Console.Clear();
 Console.WriteLine($"Программа создающая массив 4 на 4 с заполнением элементами спирально");
 int n = InputNumbers("Введите число строк(столбцов) будущего массива: ");
+int[,] array = new int[n, n];
+SpiralArray(array);
+Console.WriteLine();
+Console.WriteLine("Получился вот такой массив: ");
+PrintArray(array);
+Console.WriteLine();
 
 int InputNumbers(string input)
 {
@@ -15,41 +21,39 @@ int InputNumbers(string input)
     int output = Convert.ToInt32(Console.ReadLine());
     return output;
 }
-
-int[,] SpiralArray = new int[n, n];
-
-int temporary = 1;
-int i = 0;
-int j = 0;
-
-while (temporary <= SpiralArray.GetLength(0) * SpiralArray.GetLength(1))
+void SpiralArray(int[,] array)
 {
- SpiralArray[i, j] = temporary;
-  temporary++;
-  if (i <= j + 1 && i + j < SpiralArray.GetLength(1) - 1)
-    j++;
-  else if (i < j && i + j >= SpiralArray.GetLength(0) - 1)
-    i++;
-  else if (i >= j && i + j > SpiralArray.GetLength(1) - 1)
-    j--;
-  else
-    i--;
+    int temporary = 1;
+    int i = 0;
+    int j = 0;
+
+    while (temporary <= array.GetLength(0) * array.GetLength(1))
+    {
+        array[i, j] = temporary;
+        temporary++;
+        if (i <= j + 1 && i + j < array.GetLength(1) - 1)
+            j++;
+        else if (i < j && i + j >= array.GetLength(0) - 1)
+            i++;
+        else if (i >= j && i + j > array.GetLength(1) - 1)
+            j--;
+        else
+            i--;
+    }
 }
 
-PrintArray(SpiralArray);
-
-void PrintArray (int[,] array)
+void PrintArray(int[,] array)
 {
-  for (int i = 0; i < array.GetLength(0); i++)
-  {
-    for (int j = 0; j < array.GetLength(1); j++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-      // if (array[i,j] / 10 <= 0)
-      // Console.Write($" {array[i,j]} ");
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+             if (array[i,j] / 10 <= 0)
+             Console.Write($" {array[i,j]} ");
 
-      // else 
-      Console.Write($"{array[i,j]} ");
+             else 
+            Console.Write($"{array[i, j]} ");
+        }
+        Console.WriteLine();
     }
-    Console.WriteLine();
-  }
 }
